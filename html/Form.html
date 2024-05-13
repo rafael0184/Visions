@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navBar">
+        <div class="logo">
+            <div class="logo_inner">
+                <img src="../assets/onguard.png" alt="">
+                <a href="index.html">On-Guard</a>
+            </div>
+            <img class="menu" src="" alt="menu logo">
+        </div>
+        <div class="links">
+            <a href="index.html">Reports</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+            <a id="profile-link" href="User.html">Profile</a>
+        </div>
+        <div class="log">
+            <a class="login" href="SignIn.html">Log in</a>
+            <a class="sign" href="SignUp.html">Sign up</a>
+        </div>
+
+    </nav>
+
+    <div class="Form">
+        <h1>Incident Form</h1>
+        <div class="Form_inner">
+            <label for="incident-name">Name:</label>
+            <input type="text" id="incident-name">
+
+            <label for="incident-location" class="required-label">Location:</label>
+            <input type="text" id="incident-location" required>
+
+            <label for="incident-type" class="required-label">Type of Accident:</label>
+            <input type="text" id="incident-type" required>
+
+            <label for="incident-img">Upload a Photo:</label>
+            <input type="file" accept="image/*" id="incident-img">
+
+            <label for="incident-description" class="required-label">Description:</label>
+            <textarea id="incident-description" cols="30" rows="5" placeholder="Describe the incident..."
+                required></textarea>
+
+            <button type="submit" id="submit-form">Submit</button>
+        </div>
+    </div>
+    <footer>
+        <img src="" alt="">
+        <h2>On-Guard</h2>
+        <div class="foot_link">
+            <a href="#">About |</a>
+            <a href="#">Contact Us</a>
+            <a href="#">| Privacy Policy</a>
+        </div>
+    </footer>
+    <script type="module" src="../scripts/Form.js"></script>
+    <script type="module" src="../scripts/FirebaseConfig.js"></script>
+    <script type="module" src="../scripts/authCheckDisplay.js"></script>
+</body>
+
+</html>

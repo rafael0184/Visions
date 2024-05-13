@@ -1,0 +1,93 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.Specific{
+    display: flex;
+    gap:1rem;
+    width: 95%;
+    margin:0 auto;
+    justify-content: center;
+    box-shadow: 0 0 5px gray;
+    padding:.75rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: all 350ms;
+    -webkit-transition: all 350ms;
+    -moz-transition: all 350ms;
+    -ms-transition: all 350ms;
+    -o-transition: all 350ms;
+    cursor: pointer;
+    opacity:0;
+    filter:  blur(10px);
+    transform: translateX(-5rem);
+    animation:appear 1000ms ease forwards;
+    -webkit-animation:appear 1000ms ease forwards;
+    -webkit-filter:  blur(10px);
+    -webkit-transform: translateX(-5rem);
+    -moz-transform: translateX(-5rem);
+    -ms-transform: translateX(-5rem);
+    -o-transform: translateX(-5rem);
+}
+@keyframes appear{
+    from{}
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translate(0);
+        -webkit-filter: blur(0);
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+}
+}
+.Specific:hover{
+    scale:1.025;
+}
+.accidentt{
+    width:45%;
+    height:fit-content;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.user{
+    display: flex;
+    gap:.5rem;
+    align-items: center;
+}
+.user_pic{
+    width:55px;
+    height: 55px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.user_inner{
+    display: flex;
+    flex-direction: column;
+}
+.Post_details p{
+    line-height: 200%;
+}
+@media(max-width:431px) {
+    .Specific{
+        flex-direction:column;
+    }
+    .accidentt{
+        width:100%;
+    }
+}
+.Specific#started {
+    display: none;
+}

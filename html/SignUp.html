@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Auth.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navBar">
+        <div class="logo">
+            <div class="logo_inner">
+                <img src="../assets/onguard.png" alt="onguard logo">
+                <a href="index.html">On-Guard</a>
+            </div>
+            <img class="menu" src="" alt="menu logo">
+        </div>
+        <div class="links">
+            <a href="index.html">Reports</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </nav>
+    <section class="auth">
+        <h1>Sign Up</h1>
+        <input type="text" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <input type="password" id="confirm-password" placeholder="Confirm password">
+        <button type="submit" class="submit" id="signup-button">Submit</button>
+        <button class="up">Already have an account?<a href="SignIn.html"> Sign in</a></button>
+    </section>
+
+    <script src="../scripts/script.js"></script>
+    <script type="module" src="../scripts/SignUp.js"></script>
+    <script type="module" src="../scripts/FirebaseConfig.js"></script>
+    <script type="module" src="../scripts/authCheckDisplay.js"></script>
+</body>
+
+</html>

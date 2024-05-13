@@ -1,0 +1,11 @@
+<img class="accidentt" src="${incident.imageUrl}" alt="">
+<div class="Post_details">
+    <div class="user">
+        <img class="user_pic" src="${userImageUrl || " ../assets/img/anon.jpeg"}" alt="">
+        <div class="user_inner">
+            <h3>${userName || 'Anonymous'}</h3>
+            <span>${formattedTimestamp}</span>
+        </div>
+    </div>
+    <p>${incidents.description}</p>
+</div>

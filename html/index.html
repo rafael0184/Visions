@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navBar">
+        <div class="logo">
+            <div class="logo_inner">
+                <img src="../assets/onguard.png" alt="onguard logo">
+                <a href="index.html">On-Guard</a>
+            </div>
+            <img class="menu" src="../assets/menu.png" alt="menu logo">
+        </div>
+        <div class="links">
+            <a href="#Report">Reports</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+            <a id="profile-link" href="User.html">Profile</a>
+        </div>
+        <div class="log">
+            <a class="login" href="SignIn.html">Log in</a>
+            <a class="sign" href="SignUp.html">Sign up</a>
+        </div>
+
+    </nav>
+
+    <section class="landing">
+        <img class="left" src="../assets/left.png" alt="">
+        <div class="landing_text">
+            <h1>Welcome</h1>
+            <p>Welcome to On-Guard, your trusted source for immediate emergency response. Our platform is dedicated to
+                providing swift assistance during critical situations, including crimes, fires, and other urgent
+                incidents. With intuitive reporting features and real-time updates, we help users to take action and
+                ensure prompt resolution. Whether you're in need of urgent help or seeking to report an emergency,
+                we are here to support you every step of the way. Together, let's create safer communities
+                and respond effectively to emergencies.</p>
+            <a class="started" href="#started">Let's get started</a>
+        </div>
+    </section>
+    <section class="Report_container" id="Report">
+        <div class="Recent">
+            <h2>Recent Reports</h2>
+            <a href="ViewAll.html">View All</a>
+        </div>
+        <div class="Reports" id="started">
+            <!-- This section will be populated with incident reports -->
+        </div>
+    </section>
+
+
+    </section>
+    <footer>
+        <img src="../assets/onguard.png" alt="onguard logo">
+        <h2>On-Guard</h2>
+        <div class="foot_link">
+            <a href="#">About |</a>
+            <a href="#">Contact Us</a>
+            <a href="#">| Privacy Policy</a>
+        </div>
+    </footer>
+    <a href="./Form.html" class="write">
+        <img src="../assets/write.png" alt="+">
+    </a>
+    <script type="module" src="../scripts/script.js"></script>
+    <script type="module" src="../scripts/authCheckDisplay.js"></script>
+    <script type="module" src="../scripts/displayIndexIncidents.js"></script>
+</body>
+
+</html>

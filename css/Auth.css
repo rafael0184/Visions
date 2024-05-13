@@ -1,0 +1,45 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.auth{
+    width:65%;
+    height:50vh;
+    box-shadow: 0 0 5px gray;
+    margin:10% auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:.75rem;
+    padding:1rem;
+
+}
+.auth input{
+    width:50%;
+    padding: 1rem;
+    font-size: 1.25em;
+}
+.submit{
+    width:50%;
+    padding:.75rem 1rem;
+    background-color: #0c74b0;
+    border: none;
+    color:#fff;
+}
+.up{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+@media(max-width:431px){
+    .auth{
+        width:95%;
+    }
+    .auth input{
+        width:100%;
+    }
+}

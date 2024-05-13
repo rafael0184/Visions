@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navBar">
+        <div class="logo">
+            <div class="logo_inner">
+                <img src="./assets/onguard.png" alt="">
+                <a href="index.html">On-Guard</a>
+            </div>
+            <img class="menu" src="./assets/menu.png" alt="">
+        </div>
+        <div class="links">
+            <a href="index.html">Reports</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </nav>
+
+    <section class="Profile">
+        <div class="details">
+            <img class="user_picx" src="../assets/img/anon.jpeg" alt="">
+            <div class="out">
+                <a href="#">Settings</a>
+                <button type="submit" id="logout-button">Log out</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="user_info">
+                <h1>User Information</h1>
+                <div class="Miko">
+                </div>
+            </div>
+
+            <div class="user_info incident">
+                <h1>Incident History</h1>
+                <div class="Miko" id="started">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <img src="./assets/onguard.png" alt="">
+        <h2>On-Guard</h2>
+        <div class="foot_link">
+            <a href="#">About |</a>
+            <a href="#">Contact Us</a>
+            <a href="#">| Privacy Policy</a>
+        </div>
+    </footer>
+    <script type="module" src="../scripts/script.js"></script>
+    <script type="module" src="../scripts/authCheckDisplay.js"></script>
+    <script type="module" src="../scripts/User.js"></script>
+    <script type="module" src="../scripts/displayUserIncidents.js"></script>
+
+</body>
+
+</html>
